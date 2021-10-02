@@ -18,3 +18,11 @@ Day 2:
 4. create the pull request for the same and rebase it to resolve the conflicts.
 5. and finally merge things to master.
 
+how to resolve the conflicts:
+1. checkout to master, take a fresh pull - git pull origin master
+2. checkout to ur branch, start rebasing- git rebase -i master
+3. resolve the conflicts
+4. git add . , add chnaged fils to staging environment.a
+5. git rebase --continue
+6. if still ahving conflicts go to step 3.
+7. git push -f brnach_name
