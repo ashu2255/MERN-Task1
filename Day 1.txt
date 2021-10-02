@@ -11,3 +11,10 @@
 - add the remote git remote add origin "https://gitlab.com/_vaibhav_mehta/git-session-for-capgemini.git"
 - git push origin master
 
+Day 2:
+1. on the same repository create a new file be it .txt or .js file and try to make a commit on a new branch.
+2. create a pull request/merge request and merge the branch to the master branch.
+3. clone the repo and try to create a conflict situation by changing the same line s of code 
+4. create the pull request for the same and rebase it to resolve the conflicts.
+5. and finally merge things to master.
+
