@@ -1,0 +1,13 @@
+- install vs code and install code
+-how to use git 
+- install git (official docs)
+- configure git- name, email, default code editor
+- create a new file in ur repository
+        git init
+- git add . to add things in staging env
+- git commit -m "message"
+- git restore --staged <file>
+- signup and login to github/gitlab/bitbucket
+- add the remote git remote add origin "https://gitlab.com/_vaibhav_mehta/git-session-for-capgemini.git"
+- git push origin master
+
