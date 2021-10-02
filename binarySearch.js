@@ -26,3 +26,4 @@ const values = [0,1,2,3,4,5,6,7,8,9,10];
 console.log (binary(5, values));
 console.log (binary(1, values));
 console.log (binary(10, values));
+console.log (binary(3, values));
