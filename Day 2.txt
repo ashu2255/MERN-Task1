@@ -1,0 +1,2 @@
+Complete the Learn Javascript course from code academy.
+https://www.codecademy.com/learn/introduction-to-javascript
