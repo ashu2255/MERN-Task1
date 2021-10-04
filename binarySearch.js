@@ -1,29 +1,22 @@
+const binSearch = (arr, key) => {
+    if (!Array.isArray(arr) || typeof key !== "number")
+        throw new Error("Invalid input");
+    const sortedArray = [...arr].sort((a, b) => a - b);
 
-    const binary = (val , arr) =>{
+    for (let i = 0; i < arr.length; i++)
+        if (arr[i] !== sortedArray[i]) throw new Error("Array must be sorted");
 
-        let lower = 0;
-        let upper = arr.length - 1;
+    let lower = 0;
+    let upper = arr.length;
 
-        while(lower <= upper){
-            const middle = lower + Math.floor((upper-lower)/2);
-            if(val === arr[middle]){
-                console.log('value present at postion:'+arr[middle])
-                return middle;
-                
-            }
-
-            if(val < arr[middle]){
-             upper = middle -1;
-            }
-            else{
-                lower = middle+1;
-            }
-        }
-        return -1;
+    while (lower <= upper) {
+        const middle = lower + Math.floor((upper - lower) / 2);
+        if (key === arr[middle]) return middle + 1;
+        if (key > arr[middle]) lower = middle + 1;
+        else upper = middle - 1;
     }
+    return -1;
+};
 
-const values = [0,1,2,3,4,5,6,7,8,9,10];
-console.log (binary(5, values));
-console.log (binary(1, values));
-console.log (binary(10, values));
-console.log (binary(3, values));
+//console.log(binSearch([1,3,4,5,6],6));
+module.exports = binSearch;
